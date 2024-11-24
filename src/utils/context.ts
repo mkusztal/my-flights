@@ -38,11 +38,11 @@ You can also turn on price tracking to get alerts if the price changes for a rou
 export const destination = [
   {
     name: "London",
-    position: { lat: 51.5074, lng: -0.1278 }, // Example coordinates for London
+    position: { lat: 51.5074, lng: -0.1278 },
   },
   {
     name: "Amsterdam",
-    position: { lat: 52.3676, lng: 4.9041 }, // Example coordinates for Amsterdam
+    position: { lat: 52.3676, lng: 4.9041 },
   },
   {
     name: "Tallinn",

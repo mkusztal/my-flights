@@ -8,10 +8,12 @@ interface SearchParams {
   departureDate: string;
   returnDate: string;
   tripType: "One Way" | "Both Way";
-  adults: number;
-  children: number;
-  infantsInSeat: number;
-  infantsOnLap: number;
+  people: {
+    adults: number;
+    children: number;
+    infantsInSeat: number;
+    infantsOnLap: number;
+  };
   travelClass: "Economy" | "Business" | "First" | "Premium Business";
 }
 
@@ -41,10 +43,12 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
       departureDate,
       returnDate,
       tripType,
-      adults,
-      children,
-      infantsInSeat,
-      infantsOnLap,
+      people: {
+        adults,
+        children,
+        infantsInSeat,
+        infantsOnLap,
+      },
       travelClass,
     });
   };
@@ -150,7 +154,6 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
             />
           </Grid2>
 
-          {/* Submit Button */}
           <Grid2>
             <Button
               type='submit'
